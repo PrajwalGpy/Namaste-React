@@ -1,2 +1,4 @@
 /node_modules
 /copilate.txt
+/dist
+/.parcel-cache
