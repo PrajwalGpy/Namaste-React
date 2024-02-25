@@ -1,17 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("button", { className: "btn" }, "push"),
-    React.createElement("button", { className: "btn" }, "popo"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("button", { className: "btn" }, "push"),
-    React.createElement("button", { className: "btn" }, "popo"),
-  ]),
-]);
+const JsxGoo = (
+  <h1 id="h1" className="goo">
+    Namste React 👨‍🍳
+  </h1>
+);
 
-const hoo = React.createElement("h1", {}, "hee roopaly goog");
+const Name = () => <h1 className="goo">what is your name </h1>;
+
+const Name1 = () => (
+  <div>
+    <h1 className="goo">what is your name prajwal gp </h1>
+    {JsxGoo}
+    <Name />
+  </div>
+);
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+
+root.render(<Name1 />);
