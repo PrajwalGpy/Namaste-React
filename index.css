@@ -1,3 +1,30 @@
-h1 {
-  color: red;
+.logo {
+  width: 150px;
+  margin-left: 100px;
+}
+
+.logo-container {
+  margin: 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.nav-iteams ul {
+  display: flex;
+  margin-left: 200px;
+}
+
+.nav-iteams ul li {
+  list-style: none;
+  padding: 60px;
+  font-size: 20px;
+}
+.nav-iteams {
+  display: flex;
+  align-items: center;
+}
+body {
+  margin: 0;
 }
