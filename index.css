@@ -20,6 +20,7 @@
   list-style: none;
   padding: 60px;
   font-size: 20px;
+  cursor: pointer;
 }
 .nav-iteams {
   display: flex;
@@ -28,14 +29,29 @@
 body {
   margin: 0;
 }
+.res-card.img {
+}
 .res-card {
-  width: 200px;
-  margin: 5px;
+  width: 250px;
+
+  background-color: aliceblue;
+  margin: 20px;
+
+  /* overflow: hidden; Prevent content from overflowing */
+}
+.res-info {
+  padding: 0 20px;
 }
 .res-logo {
   width: 100%;
+  margin: 0;
+  height: 200px;
 }
 .res-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 3;
+}
+.res-card:hover {
+  border: 1px solid black;
 }
