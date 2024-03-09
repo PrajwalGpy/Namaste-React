@@ -29,14 +29,13 @@
 body {
   margin: 0;
 }
-.res-card.img {
-}
+
 .res-card {
   width: 250px;
 
   background-color: aliceblue;
   margin: 20px;
-
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   /* overflow: hidden; Prevent content from overflowing */
 }
 .res-info {
@@ -52,6 +51,17 @@ body {
   flex-wrap: wrap;
   gap: 3;
 }
+.res-card {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+}
+
 .res-card:hover {
-  border: 1px solid black;
+  transform: scale(1.1);
+}
+.filter {
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
 }
